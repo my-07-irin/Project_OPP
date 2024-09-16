@@ -15,6 +15,9 @@ result = open_read_file("../data/products.json")
 result_object = create_object_category_product(result)
 result_test_object = create_object_category_product(data_test)
 
+print(result)
+print(data_test)
+
 assert data_test == result
 assert result_test_object[0].name == result_object[0].name
 assert result_test_object[0].description == result_object[0].description
